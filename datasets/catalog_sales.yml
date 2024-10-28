@@ -54,8 +54,6 @@ columns:
     data_type: long
   - name: cs_quantity
     data_type: long
-  - name: cs_sales_price
-    data_type: "decimal(7,2)"
   - name: cs_ship_addr_sk
     data_type: long
   - name: cs_ship_cdemo_sk
