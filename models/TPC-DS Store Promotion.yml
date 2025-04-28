@@ -96,11 +96,3 @@ relationships:
     to:
       dimension: Product Dimension - TPC-DS
       level: Product Dimension - TPC-DS
-  - unique_name: store_promotion_Product_Dimension_1
-    from:
-      dataset: store_promotion
-      join_columns:
-        - ss_item_sk
-    to:
-      dimension: Product Dimension - TPC-DS
-      level: Product Dimension - TPC-DS
