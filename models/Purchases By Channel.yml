@@ -1,6 +1,6 @@
-unique_name: TPC-DS Purchases By Channel
+unique_name: Purchases By Channel
 object_type: model
-label: TPC-DS Purchases By Channel
+label: Purchases By Channel
 dimensions:
   - Catalog_Preferred
 include_default_drillthrough: true

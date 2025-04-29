@@ -1,6 +1,6 @@
-unique_name: TPC-DS Store Promotion
+unique_name: Store Promotion
 object_type: model
-label: TPC-DS Store Promotion
+label: Store Promotion
 dimensions: []
 include_default_drillthrough: true
 metrics:

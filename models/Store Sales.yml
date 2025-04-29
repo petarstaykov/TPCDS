@@ -1,6 +1,6 @@
-unique_name: TPC-DS Store Sales
+unique_name: Store Sales
 object_type: model
-label: TPC-DS Store Sales
+label: Store Sales
 dimensions:
   - Net_Profit_Tier
   - Sales_Price_Tier

@@ -1,6 +1,6 @@
-unique_name: TPC-DS Store Returns
+unique_name: Store Returns
 object_type: model
-label: TPC-DS Store Returns
+label: Store Returns
 dimensions:
   - Returns_Time_Tier
 include_default_drillthrough: true
