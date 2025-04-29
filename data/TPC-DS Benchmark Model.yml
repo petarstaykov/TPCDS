@@ -925,11 +925,6 @@ aggregates:
      target_connection: Connection - TPCDS
      attributes:
 
-       - name: Calendar Week
-         dimension: Date Dimension - TPC-DS
-         relationships_path:
-           - store_sales_Date_Dimension_Sold
-
        - name: d_day_name_week
          dimension: Date Dimension - TPC-DS
          relationships_path:

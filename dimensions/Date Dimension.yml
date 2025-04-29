@@ -104,7 +104,6 @@ hierarchies:
     levels:
       - unique_name: Calendar Year-Week
       - unique_name: Calendar Month-Week
-      - unique_name: Calendar Week
       - unique_name: Date Week Hierarchy - TPC-DS
         secondary_attributes:
           - unique_name: d_day_name_week
@@ -167,23 +166,6 @@ level_attributes:
     name_column: calc_year_quarter
     sort_column: calc_year_quarter
     time_unit: quarter
-  - unique_name: Calendar Week
-    label: Calendar Week
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
-    dataset: date_dim
-    key_columns:
-      - d_qoy
-      - d_year
-    name_column: calc_year_quarter
-    sort_column: calc_year_quarter
-    time_unit: week
   - unique_name: Calendar Year-Week
     label: Calendar Year
     allowed_calcs_for_dma:
