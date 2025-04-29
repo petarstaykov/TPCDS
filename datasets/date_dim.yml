@@ -85,6 +85,9 @@ columns:
         sql: "cast(DATE_TRUNC('quarter', d_date) as date)"
       - dialect: BigQuery
         sql: "DATE_TRUNC(d_date, QUARTER)"
+  - name: calc_year_quarter
+    data_type: string
+    sql: to_char(d_date, 'yyyy-"Q"q')
   - name: year_week
     data_type: string
     sql: "TO_CHAR(date_trunc('week', \"d_date\"), 'YYYY-MM-DD')"
@@ -93,3 +96,4 @@ columns:
         sql: "TO_CHAR(DATE_TRUNC('week', d_date), 'y-MM-dd')"
       - dialect: BigQuery
         sql: "FORMAT_DATE('%Y-%m-%d', DATE_TRUNC(d_date, WEEK))"
+
