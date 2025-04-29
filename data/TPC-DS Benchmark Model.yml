@@ -916,10 +916,6 @@ aggregates:
        - name: d_catalog_sales_price_tier
          dimension: Catalog_Sales_Price_Tier
 
-       - name: d_quarter_of_year
-         dimension: Date Dimension - TPC-DS
-         relationships_path:
-           - store_sales_Date_Dimension_Sold_1
 
      metrics:
        - m_cs_sales_price_sum
@@ -935,11 +931,6 @@ aggregates:
            - store_sales_Date_Dimension_Sold
 
        - name: d_day_name_week
-         dimension: Date Dimension - TPC-DS
-         relationships_path:
-           - store_sales_Date_Dimension_Sold
-
-       - name: d_week_seg
          dimension: Date Dimension - TPC-DS
          relationships_path:
            - store_sales_Date_Dimension_Sold

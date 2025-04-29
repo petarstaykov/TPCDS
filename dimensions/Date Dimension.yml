@@ -9,19 +9,6 @@ hierarchies:
     levels:
       - unique_name: Calendar Year
       - unique_name: Calendar Quarter
-        secondary_attributes:
-          - unique_name: d_quarter_of_year
-            label: Quarter of Year
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
-            folder: Date Attributes
-            key_columns:
-              - d_qoy
-            name_column: d_qoy
-            sort_column: d_qoy
       - unique_name: Calendar Month
         secondary_attributes:
           - unique_name: d_month_of_year
@@ -118,19 +105,6 @@ hierarchies:
       - unique_name: Calendar Year-Week
       - unique_name: Calendar Month-Week
       - unique_name: Calendar Week
-        secondary_attributes:
-          - unique_name: d_week_seg
-            label: Week Sequence
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
-            folder: Date Attributes
-            key_columns:
-              - d_week_seq
-            name_column: d_week_seq
-            sort_column: d_week_seq
       - unique_name: Date Week Hierarchy - TPC-DS
         secondary_attributes:
           - unique_name: d_day_name_week
@@ -205,8 +179,10 @@ level_attributes:
       - Range
     dataset: date_dim
     key_columns:
-      - calc_year_quarter
+      - d_qoy
+      - d_year
     name_column: calc_year_quarter
+    sort_column: calc_year_quarter
     time_unit: week
   - unique_name: Calendar Year-Week
     label: Calendar Year
