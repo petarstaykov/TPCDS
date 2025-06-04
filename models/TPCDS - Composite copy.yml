@@ -1,0 +1,14 @@
+# Database Connection Configuration
+CONNECTION="con1"
+DB_NAME="atscale"
+DB_SCHEMA="as_adventure"
+
+# Connection Metadata
+LABEL="Postgres"
+
+unique_name: Postgres
+object_type: connection
+as_connection: {{CONNECTION}}
+label: {{LABEL}}
+database: {{DB_NAME}}
+schema: {{DB_SCHEMA}}
